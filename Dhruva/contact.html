@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhruva Drive Care - Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.JPG" alt="Dhruva Drive Care Logo">
+        <h1>DHRUVA DRIVE CARE</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-contact">
+        <section class="contact-info">
+            <h1>Have Questions?</h1>
+            <p>Please feel free to call or email us, or use our contact form to get in touch with us. We look forward to hearing from you!</p>
+            <p><strong>Emergency? Call Us:</strong></p>
+            <p>+91 95534 01064</p>
+            <p><strong>Send Us Mail:</strong></p>
+            <p>Dhruvadrive123@gmail.com</p>
+            <p><strong>Find the Studio:</strong></p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3811.07068989538!2d82.1108433!3d17.2153597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a377953f603e54b%3A0xc9fc88040573e3f0!2sKrishnavaram%20toll%20plaza!5e0!3m2!1sen!2sin!4v1717329492561!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section class="contact-form">
+            <form action="connection.php" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+    
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                
+                <label for="rating">Rate Us</label>
+                    <div class="rating-container">
+                        <input type="radio" id="1-star" name="rating" value="1" required>
+                        <label for="1-star">1</label>
+                        <input type="radio" id="2-star" name="rating" value="2">
+                        <label for="2-star">2</label>
+                        <input type="radio" id="3-star" name="rating" value="3">
+                        <label for="3-star">3</label>
+                        <input type="radio" id="4-star" name="rating" value="4">
+                        <label for="4-star">4</label>
+                        <input type="radio" id="5-star" name="rating" value="5">
+                        <label for="5-star">5</label>
+                    </div>
+    
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                
+                <label for="message">Your Feedback</label>
+                <textarea id="message" name="message" placeholder="Your Feedback" required></textarea>
+                <button type="submit" name="form" value="form">Send message</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <h2>Subscribe to Newsletter</h2>
+        <p>Enter your email address to register to our newsletter subscription!</p>
+        <form action="connection.php" method="POST">
+            <input type="email" name="newsletter_email" placeholder="Email Address" required>
+            <button type="submit" name="newsletter" value="newsletter">Subscribe</button>
+        </form>
+    </footer>
+    
+</body>
+</html>
